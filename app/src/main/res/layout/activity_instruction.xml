@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--android:fitsSystemWindows="true"
+ android:clipToPadding="false"
+ 添加这两个属性 状态栏沉浸才不会缩回去
+ -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    tools:context="com.example.tolean.ibook.view.InstructionActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/nav_instruction_toolbar"
+        style="@style/normal_toolbar">
+    </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.CardView
+        style="@style/MatchMatch"
+        android:padding="15dp"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:id="@+id/nav_instruction_textview"
+            style="@style/introduction_and_instruction_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

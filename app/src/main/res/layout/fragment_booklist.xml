@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              style="@style/MatchMatch">
+    <RelativeLayout
+        style="@style/MatchMatch">
+        <android.support.design.widget.CoordinatorLayout
+            style="@style/MatchMatch">
+            <!--下拉刷新-->
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/booklist_swiperefresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/booklist_recyclerview"
+                    style="@style/MatchMatch"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    />
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/booklist_fab"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:backgroundTint="@color/colorPrimary"
+                style="@style/BackToTopFAB"/>
+        </android.support.design.widget.CoordinatorLayout>
+        <!--没有网络时显示的界面-->
+        <com.example.tolean.ibook.my_view.EmptyLayout
+            android:id="@+id/booklist_empty_view"
+            style="@style/MatchMatch"
+            >
+        </com.example.tolean.ibook.my_view.EmptyLayout>
+    </RelativeLayout>
+</LinearLayout>

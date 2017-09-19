@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_introduction"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="@string/activity_main_drawer_introduction"/>
+        <item
+            android:id="@+id/nav_instruction"
+            android:icon="@android:drawable/ic_input_get"
+            android:title="@string/activity_main_drawer_instruction"/>
+        <item
+            android:id="@+id/nav_theme"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="@string/activity_mian_drawer_theme"/>
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@android:drawable/ic_menu_recent_history"
+            android:title="@string/activity_main_drawer_favorites"/>
+    </group>
+
+</menu>

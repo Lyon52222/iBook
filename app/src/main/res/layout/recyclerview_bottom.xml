@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/MatchWrap"
+              android:gravity="center"
+              android:orientation="horizontal">
+    <ProgressBar
+        android:id="@+id/progress_recyclerview_bottom"
+        android:layout_width="15dp"
+        android:layout_height="15dp"/>
+    <TextView
+        android:id="@+id/tv_recyclerview_bottom"
+        style="@style/WrapWrap"
+        android:layout_marginLeft="3dp"
+        android:text="加载中....."/>
+</LinearLayout>

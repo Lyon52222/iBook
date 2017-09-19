@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/page_icon_loading">
+        <bitmap android:src="@drawable/page_icon_loading"
+                android:antialias="true"
+                android:filter="true"/>
+        <rotate android:fromDegrees="0"
+                android:interpolator="@android:anim/linear_interpolator"
+                android:pivotX="50%"
+                android:pivotY="50%"
+                android:toDegrees="360"
+                />
+    </item>
+
+</layer-list>

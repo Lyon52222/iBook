@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_overflow"
+        android:title="@string/open_from_then_album"
+        app:showAsAction="always">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/show_album"
+                    android:title="@string/open_from_then_album"
+                    app:showAsAction="always"/>
+            </group>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.tolean.ibook.view.SearchActivity">
+    <com.example.tolean.ibook.my_view.SearchView
+        android:id="@+id/search_view"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </com.example.tolean.ibook.my_view.SearchView>
+    <include layout="@layout/fragment_booklist"/>
+
+</LinearLayout>
